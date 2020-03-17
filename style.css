@@ -1,7 +1,84 @@
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
+
+.header1{
+  margin: 10px;
+  padding: 1px;
+  border: 2px double #F34949;
+  background-image: url("https://media.giphy.com/media/7T200DTPdx31e/giphy.gif");
+  text-align: center;
+  font-family: "Special Elite", serif;
+  color: red;
+  text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -2px black;
+}
+
+.red{
+  background-color: #ff4d4d;
+  color:  #e6e6e6;
+  padding: 2px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.green{
+  background-color: #00ff00;
+  color:  #e6e6e6;
+  padding: 2px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.blue{
+  background-color: #4d88ff;
+  color:  #e6e6e6;
+  padding: 2px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.yellow{
+  background-color: #ffff66;
+  color:  #e6e6e6;
+  padding: 2px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.black{
+  background-color: black;
+  color:  #e6e6e6;
+  padding: 2px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+h3{
+  margin: 0;
+  padding: 2px;
+  text-align: center;
+}
+
+
+p{
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+}
+
+
+/* body {
+  margin: 0;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+} */
 canvas {
   display: block;
+  border-style: inset;
 }
