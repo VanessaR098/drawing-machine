@@ -2,9 +2,11 @@ let array = []; //holds old X and Y mouse positions
 let colorR = 0;
 let colorG = 0;
 let colorB = 0;
+let cnv;
 
 function setup() {
-  createCanvas(600, 600);
+  cnv = createCanvas(windowWidth/2, windowHeight/2);
+  cnv.parent("#canvasDiv");
   background(255);
   strokeWeight(5);
   noFill();
@@ -46,6 +48,10 @@ function keyPressed(){
     colorR = 255;
     colorG = 255;
     colorB = 102;
+  }else if(key === 'o'){
+    colorR = 255;
+    colorG = 148;
+    colorB = 77;
   }else if(key === 'k'){
     colorR = 0;
     colorG = 0;
