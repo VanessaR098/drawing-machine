@@ -1,4 +1,4 @@
-let array = [];
+let array = []; //holds old X and Y mouse positions
 let colorR = 0;
 let colorG = 0;
 let colorB = 0;
@@ -19,7 +19,7 @@ function draw() {
 
   if (mouseIsPressed){
     stroke(colorR, colorG, colorB);//map(mouseX, 0, 600, 0, 255, true));
-    line(mouseX, mouseY, pmouseX, pmouseY);
+    line(mouseX, mouseY, pmouseX, pmouseY); //pmouseX/Y = contains position of mouser or finger in the frame previous to the current frame, relative to (0,0) of the canvas
     //background(0);
     array.push([mouseX, mouseY]);
   }
@@ -58,14 +58,14 @@ function keyPressed(){
 
 function keyTyped(){
   if (key === 's'){
-    //save this image
+    //save canvas as an image
     saveCanvas('fileName', 'png');
   }else if (key === 'd'){
     background(255);
 
-    //display image
+    //display drawn image
     beginShape();
-    for (let i = 0; i < array.length-1; i++) {
+    for (let i = 0; i < array.length; i++) {
       //line(array[i][0], array[i][1], array[i + 1][0], array[i + 1][1]);
       curveVertex(array[i][0], array[i][1])
     }
