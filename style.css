@@ -1,12 +1,11 @@
-html{
-
+html {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
 .header1 {
-  margin: 10px;
+  margin: 20px;
   padding: 1px;
   border: 2px double #F34949;
   background-image: url("https://media.giphy.com/media/7T200DTPdx31e/giphy.gif");
@@ -20,28 +19,26 @@ h3 {
   margin: 0;
   padding: 2px;
   text-align: center;
-  background-color:	rgb(243, 73, 73, 0.7);
-
+  background-color: rgb(243, 73, 73, 0.7);
 }
 
 p {
   margin: 1;
-  padding: 0px;
+  padding: 10px;
   text-align: center;
   background-color: rgb(243, 73, 73, 0.7);
 }
 
 body {
-
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url("Images/pokegrass.jpg");
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 canvas {
   display: block;
